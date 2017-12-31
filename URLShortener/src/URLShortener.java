@@ -13,7 +13,7 @@ import java.util.Scanner;
  * If a shortened URL is given it will output the original URL.
  * 
  * The program also deals with various urls that direccts to the same website.
- * However, the program is case sensitive (e.g. Http != http)
+ * Note, the program is case sensitive (e.g. Http != http)
  * 
  * The entered URLs are stored as long as the code is running and the number
  * of possible combinations of slugs is 62^slugLength. With slugLength = 6
@@ -29,7 +29,7 @@ public class URLShortener {
 	// storage for generated slugs
 	private HashMap<String, String> slugMap; // slug-url map
 	private HashMap<String, String> urlMap;// url-slug map to check whether
-											// a url has been previously stored
+					       // a url has been previously stored
 	private String domain; // Use this attribute to generate urls for a custom
 							// domain name
 	private char myChars[]; // This array is used for character to number
